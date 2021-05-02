@@ -48,15 +48,15 @@ h1,h2,h3,h4,h5,h6{
     height: 25vh;
 }
 
-#info div{
-    background-color: #dcdde0;
+#info {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 
-#info .borda{
+#info > .borda{
     border-width:1px;
     border-style: solid;
     border-color: var(--text-highlight);
@@ -65,6 +65,7 @@ h1,h2,h3,h4,h5,h6{
 }   
 
 #info .detalhes{
+    margin-left: 1em;
 }
 
 #info .detalhes > img{
@@ -75,3 +76,6 @@ h1,h2,h3,h4,h5,h6{
     border-style: solid;
 }
 
+.Info > .Borda {
+    background: red;
+}
